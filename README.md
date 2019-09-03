@@ -1,9 +1,12 @@
 # vehicle-shop
 
 ![localhost](img/f.jpg?raw=true)
-####/vehicle-detail
+
+/vehicle-detail
 ![localhost](img/vehicle-detail.jpg?raw=true)
-####/vehicle-available
+
+/vehicle-available
 ![localhost](img/vehicle-available.jpg?raw=true)
-####/mortorcycle-detail
+
+/mortorcycle-detail
 ![localhost](img/motor.jpg?raw=true)
