@@ -2,6 +2,7 @@ package desgin.pattern.vehicle;
 
 import java.io.*;
 import java.util.LinkedList;
+import java.util.List;
 
 //ClassSingleton
 public class VehicleSingleton {
@@ -73,11 +74,11 @@ public class VehicleSingleton {
             FileOutputStream f = new FileOutputStream(new File("vehicleObject.txt"));
             ObjectOutputStream o = new ObjectOutputStream(f);
 
+            vehicles.get(index).setFuel(vehicle.getFuel());
             vehicles.get(index).setColor(vehicle.getColor());
-            vehicles.get(index).setType(vehicle.getType());
-            vehicles.get(index).setDisplacement(vehicle.getDisplacement());
-            vehicles.get(index).setSunroof(vehicle.hasSunroof());
             vehicles.get(index).setAvailable(vehicle.isAvailable());
+            vehicles.get(index).setSpeed(vehicle.getSpeed());
+            vehicles.get(index).setType(vehicle.getType());
 
             o.writeObject(vehicles);
 
@@ -106,5 +107,25 @@ public class VehicleSingleton {
         } catch (IOException e) {
             System.out.println("Error initializing stream");
         }
+    }
+    public List<Vehicle> getAllCar(){
+        readFile();
+        LinkedList<Vehicle> cars = new LinkedList<>();
+        for(Vehicle car:getAllVehicles()){
+            if(car instanceof  Car){
+                cars.add(car);
+            }
+        }
+        return cars;
+    }
+    public List<Vehicle> getAllPlane(){
+        readFile();
+        LinkedList<Vehicle> planes = new LinkedList<>();
+        for(Vehicle plane:getAllVehicles()){
+            if(plane instanceof  Plane){
+                planes.add(plane);
+            }
+        }
+        return planes;
     }
 }
