@@ -13,7 +13,7 @@ public class Plane extends Vehicle{
     public void fly(){
         if(getFuel()-200 >0){
             System.out.println("Fly.");
-        }
+        }else
         System.out.println("Please add Fuel.");
     }
 }

@@ -15,7 +15,7 @@ public class Car extends Vehicle {
     public void move(){
         if(getFuel()-50 >0){
             System.out.println("Move.");
-        }
+        }else
         System.out.println("Please add Fuel.");
     }
 }

@@ -51,7 +51,7 @@ public class VehicleShopApplication {
         vehicle.setType(v.getType());
 
         // if we just pass v as argument in the first place then we cant know that what is the exactly type of v,
-        // because we pass v as parameter in type Of Vehicle not Car or Plane so the above line of code are the make sure
+        // because we pass v as parameter in type Of Vehicle not Car or Plane so the above line of code to make sure
 //        that we already check and create the exactly type.
         this.singleton.createVehicle(vehicle);
         return new ResponseEntity<List<Vehicle>>(this.singleton.getAllVehicles(), HttpStatus.OK);
