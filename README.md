@@ -1,15 +1,19 @@
-# Vehicle-shop SOP Assigment
+# Vehicle-shop (SOP Assigment)
 ![localhost](img/ass2.jpg?raw=true)
+
 ##Example
-###/create{vehicle}
+######/create{vehicle}
 ![localhost](img/create.jpg?raw=true)
 
-###/all
+######/all
 ![localhost](img/all.jpg?raw=true)
 
-###/all-car
+######/all-car
 ![localhost](img/all-car.jpg?raw=true)
 
-###/all-plane
+######/all-plane
 ![localhost](img/all-plane.jpg?raw=true)
+
+######/update/{index}
+![localhost](img/update.jpg?raw=true)
 
